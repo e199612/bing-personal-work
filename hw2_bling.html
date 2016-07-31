@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>貓咪餵食秀</title>
+	<script language="javascript">
+		function ShowPic(pic) {
+			pic.src="cat1.jpg";
+		}
+		function ShowPic_inverse(pic) {
+			pic.src="cat1_inverse.jpg";
+		  
+		}
+		function ShowPic2(pic) {
+			pic.src="cat2.jpg";
+		}
+		function ShowPic_inverse2(pic) {
+			pic.src="cat2_inverse.jpg";
+		  
+		}
+		function ShowPic3(pic) {
+			pic.src="cat3.jpg";
+		}
+		function ShowPic_inverse3(pic) {
+			pic.src="cat3_inverse.jpg";
+		  
+		}
+		function ShowPic4(pic) {
+			pic.src="cat4.jpg";
+		}
+		function ShowPic_inverse4(pic) {
+			pic.src="cat4_inverse.jpg";
+		  
+		}
+		function ShowPic5(pic) {
+			pic.src="cat5.jpg";
+		}
+		function ShowPic_inverse5(pic) {
+			pic.src="cat5_inverse.jpg";
+		  
+		}
+		function btn() {
+			var input_ = document.getElementById('catname');
+			var input = input_.value;
+			var cir;
+			for(var i = 0 , radio_form = document.getElementById("radioForm"); i<radio_form.cat.length; i++){
+				if (radio_form.cat[i].checked)
+			 	{
+			 		cir= radio_form.cat[i].value;
+			 		break;
+			 	}
+			 }
+			if(input=="All Cats"||cir=="All Cats"){
+				document.getElementById('pic1').style.opacity=0.5;
+				document.getElementById('pic2').style.opacity=0.5;
+				document.getElementById('pic3').style.opacity=0.5;
+				document.getElementById('pic4').style.opacity=0.5;
+				document.getElementById('pic5').style.opacity=0.5;
+			}
+		  	else if(input == "Devil"||input == "Brand1" || cir == "Devil"){
+				document.getElementById('pic1').style.opacity=1;
+				document.getElementById('pic2').style.opacity=0.5;
+				document.getElementById('pic3').style.opacity=0.5;
+				document.getElementById('pic4').style.opacity=0.5;
+				document.getElementById('pic5').style.opacity=0.5;
+			}
+			else if(input == "Gandalf"|| input == "Brand2" ||cir == "Gandalf" ){
+				document.getElementById('pic1').style.opacity=0.5;
+				document.getElementById('pic2').style.opacity=1;
+				document.getElementById('pic3').style.opacity=0.5;
+				document.getElementById('pic4').style.opacity=0.5;
+				document.getElementById('pic5').style.opacity=0.5;
+			}
+			else if(input == "Ali" ||input == "Brand3" || cir == "Ali"){
+				document.getElementById('pic1').style.opacity=0.5;
+				document.getElementById('pic2').style.opacity=0.5;
+				document.getElementById('pic3').style.opacity=1;
+				document.getElementById('pic4').style.opacity=0.5;
+				document.getElementById('pic5').style.opacity=0.5;
+			}
+			else if(input == "Hope"||input == "Brand4" || cir == "Hope" ){
+				document.getElementById('pic1').style.opacity=0.5;
+				document.getElementById('pic2').style.opacity=0.5;
+				document.getElementById('pic3').style.opacity=0.5;
+				document.getElementById('pic4').style.opacity=1;
+				document.getElementById('pic5').style.opacity=0.5;
+			}
+			else if(input == "Amber"||input == "Brand5" || cir == "Amber" ){
+				document.getElementById('pic1').style.opacity=0.5;
+				document.getElementById('pic2').style.opacity=0.5;
+				document.getElementById('pic3').style.opacity=0.5;
+				document.getElementById('pic4').style.opacity=0.5;
+				document.getElementById('pic5').style.opacity=1;
+			}
+			else{
+				alert("Input Error!!")
+			}
+		}
+</script>
+	<style type="text/css">
+		body{
+			background-color: 	#D9B3B3;
+		}
+		.left {
+		    float: left;
+		    max-width: 160px;
+		    padding: 1em;
+		    border-radius: 20px;
+		    background-color: rgba(209, 233, 255,0.9);
+		    height: 620px;
+		}
+		.right {
+			text-align: center;
+		    margin-left: 200px;
+		    border-left: 10px ;
+		    padding: 1em;
+		    overflow: hidden;
+		    border-radius: 20px;
+		    background-color: rgba(255, 244, 194,0.9);
+		    height: 620px;
+		}
+		div.right div{
+			float: left;
+			border:1px;
+			border-radius: 30px;
+			margin: 5px;
+			width: 250px;
+			display:block;
+
+
+		}
+		div.right div.desc{
+			text-align: center;
+			width: 100px;
+			height: 40px;
+			background-color: powderblue;
+			font-size:13pt;
+			font-family: verdana;
+			
+		}
+		input{
+			margin-bottom: 20px;
+		}
+		p{
+			margin-bottom: 20px;
+		}
+		div.right div.bigBtn{
+			float: center;
+			border-style:dashed;
+			border-width: 2px;
+			border-color: #66B3FF;
+			border-spacing: 20px;
+			padding:10px 10px;
+		}
+		div.bigBtn img:hover{
+			box-shadow: 5px 5px 15px rgba(92, 92, 92, 0.8);
+		}
+		#img1{
+			position:absolute;
+			left:350px;
+			
+		}
+		#img2{
+			position:absolute;
+			left:630px;
+			
+		}
+		#img3{
+			position:absolute;
+			left:910px;
+			
+		}
+		#img4{
+			position:absolute;
+			left:475px;
+			bottom: 5%;
+		}
+		#img5{
+			position:absolute;
+			left:755px;
+			bottom: 5%;
+		}
+	</style>
+</head>
+<body>
+<div class="left">
+		  <center>
+		  	<p style="color:#0072E3;font-size:18pt;font-family: verdana;"><strong>Feed Me</strong></p>
+		  	<p style="color:#0080FF;font-size:13pt;font-family: verdana;">Choose one or all cats to feed</p>
+		  	<form name="radioForm" id="radioForm">
+		    <input type="radio" name="cat" value="All Cats"><span style="color:#0080FF;font-size:13pt;font-family: verdana;">All Cats&nbsp;</span><br>
+		    <input type="radio" name="cat" value="Devil"><span style="color:#0080FF;font-size:13pt;font-family: verdana;">Devil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+		    <input type="radio" name="cat" value="Gandalf"><span style="color:#0080FF;font-size:13pt;font-family: verdana;">Gandalf&nbsp;</span><br>
+		    <input type="radio" name="cat" value="Ali"><span style="color:#0080FF;font-size:13pt;font-family: verdana;">Ali&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+		    <input type="radio" name="cat" value="Hope"><span style="color:#0080FF;font-size:13pt;font-family: verdana;">Hope&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+		    <input type="radio" name="cat" value="Amber"><span style="color:#0080FF;font-size:13pt;font-family: verdana;">Amber&nbsp;&nbsp;&nbsp;</span><br></form>
+		    <span style="color:#0080FF;font-size:13pt;font-family: verdana;"><strong>Sepcific breed? </strong></span><br>
+		    <input type="text" id="catname" placeholder="Empty for all breeds.." style="border-radius:20px;padding: 3px;width:150px;height:20px;font-family: verdana;background-color:#ECF5FF"><br>
+		    <button type="button" style="background-color:powderblue;border-radius:10px;width:80px;height:30px;border:2px #0080FF solid ;"  onclick="btn()"><span style="color:#0080FF;font-size:13pt;font-family: verdana;">Feed</span></button></center>
+
+</div>
+<div class="right">
+		<p><font style="color: #C4C400;font-size:18pt;font-family: verdana;text-align:center;"><strong>Cat Album</strong></font></p>
+
+		<div class="bigBtn" id="img1" >
+			<img id="pic1" class="cat1" src="cat1.jpg" onmousedown="ShowPic_inverse(this);" onmouseup="ShowPic(this);" style="border-radius:30px;width:250px;height:180px;">
+			<div class="desc">Devil</div><div class="desc">Brand1</div>
+		</div>
+		<div class="bigBtn" id="img2" >
+			<img id="pic2" class="cat2" src="cat2.jpg" onmousedown="ShowPic_inverse2(this);" onmouseup="ShowPic2(this);" style="border-radius:30px;width:250px;height:180px;">
+			<div class="desc">Gandalf</div><div class="desc">Brand2</div>
+		</div>
+		<div class="bigBtn" id="img3" >
+			<img id="pic3" class="cat3" src="cat3.jpg" onmousedown="ShowPic_inverse3(this);" onmouseup="ShowPic3(this);" style="border-radius:30px;width:250px;height:180px;">
+			<div class="desc">Ali</div><div class="desc">Brand3</div>
+		</div>
+		<div class="bigBtn" id="img4" >
+			<img id="pic4" class="cat4" src="cat4.jpg" onmousedown="ShowPic_inverse4(this);" onmouseup="ShowPic4(this);" style="border-radius:30px;width:250px;height:180px;">
+			<div class="desc">Hope</div><div class="desc">Brand4</div>
+		</div>
+		<div class="bigBtn" id="img5" >
+			<img id="pic5" class="cat5" src="cat5.jpg" onmousedown="ShowPic_inverse5(this);" onmouseup="ShowPic5(this);" style="border-radius:30px;width:250px;height:180px;">
+			<div class="desc">Amber</div><div class="desc">Brand5</div>
+		</div>
+</div>
+	
+</body>
+</html>
